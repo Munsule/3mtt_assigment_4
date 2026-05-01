@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Student Registration Form</h1>
+
+        <!-- Q1 & Q2: Text inputs for First Name and Last Name -->
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+        </div>
+
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+        </div>
+
+        <!-- Q3: Number input for Age -->
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="99" placeholder="Enter your age" required>
+        </div>
+
+        <!-- Q4: Email input -->
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <!-- Q5: Telephone input -->
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" required>
+        </div>
+
+        <!-- Q6: Password input -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" placeholder="Minimum 8 characters" required>
+        </div>
+
+        <!-- Q7: Radio buttons for Gender -->
+        <div>
+            <fieldset>
+                <legend>Gender:</legend>
+                <label>
+                    <input type="radio" name="gender" value="Male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Prefer not to say"> Prefer not to say
+                </label>
+            </fieldset>
+        </div>
+
+        <!-- Q8: Checkboxes for Courses Interested In -->
+        <div>
+            <fieldset>
+                <legend>Courses Interested In:</legend>
+                <label>
+                    <input type="checkbox" name="courses" value="Web Development"> Web Development
+                </label>
+                <label>
+                    <input type="checkbox" name="courses" value="Mobile App Development"> Mobile App Development
+                </label>
+                <label>
+                    <input type="checkbox" name="courses" value="Data Science"> Data Science
+                </label>
+                <label>
+                    <input type="checkbox" name="courses" value="Artificial Intelligence"> Artificial Intelligence
+                </label>
+            </fieldset>
+        </div>
+
+        <!-- Q9: Submit and Reset buttons -->
+        <div>
+            <button type="submit">Register Now</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+
+    <!-- Q10 BONUS: Reflection comment -->
+    <!-- The difference between a radio button and a checkbox is that radio buttons allow only one selection from a group (mutually exclusive) while checkboxes allow multiple selections simultaneously. -->
+</body>
+</html>
